@@ -1,0 +1,43 @@
+{
+  "extends": ["react-app", "airbnb", "prettier", "plugin:prettier/recommended", "prettier/react"],
+  "plugins": ["react-hooks", "testing-library"],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": [2],
+    "no-restricted-imports": ["error", {
+      "name": "moment",
+      "message": "Please use mcapMoment instead from common."
+    }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debug": "error",
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ]
+  },
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.3"
+    }
+  }
+}

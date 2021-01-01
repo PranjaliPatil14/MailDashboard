@@ -1,0 +1,7 @@
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 86187726d8c883b00da3678f8f5976111bd057ac0468b70cf748765f8fdf8a21
+- filename: src/layout/SideBar.js
+  checksum: ba42b5f4652850288f20a2db0699771a7fc6b940a2fd5e49ec67dd65650f1e99
+- filename: yarn.lock
+  checksum: c4be37540a0daa506e6fbdebd893ece44069ed0e9de985f890ea7aa007000cd5

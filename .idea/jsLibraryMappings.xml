@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/enzyme, @types/enzyme-adapter-react-16, @types/eslint, @types/eslint-config-prettier, @types/jest, @types/node, @types/prettier, @types/react, @types/react-native, @types/typescript-deferred}" />
+    <includedPredefinedLibrary name="HTTP Response Handler" />
+    <includedPredefinedLibrary name="Nashorn" />
+  </component>
+</project>

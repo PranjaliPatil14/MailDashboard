@@ -1,0 +1,7 @@
+coverage
+src/stories
+public
+build
+.out
+.vscode/**
+mcap-frontend.iml
