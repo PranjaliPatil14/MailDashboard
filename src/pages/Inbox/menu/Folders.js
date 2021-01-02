@@ -9,7 +9,7 @@ const folders = [
   },
   {
     Icon: Mail,
-    title: "Sent Mail",
+    title: "Sent Mails",
   },
   {
     Icon: Circle,

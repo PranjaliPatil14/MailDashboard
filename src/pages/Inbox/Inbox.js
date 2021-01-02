@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import "./inbox.css";
-import Menu from "./components/Menu";
+import Menu from "./menu/Menu";
+import Mails from "./mail/Mails";
 
 const Inbox = () => {
   return (
@@ -9,6 +10,7 @@ const Inbox = () => {
       <Header />
       <div className="page-content">
         <Menu />
+        <Mails />
       </div>
     </div>
   );

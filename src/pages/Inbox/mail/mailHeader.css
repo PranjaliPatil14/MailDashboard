@@ -1,0 +1,63 @@
+@import "../../../assets/styles/colors.css";
+
+.mails-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mails-header-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail-operations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.mail-navigation {
+    display: flex;
+    gap: 5px
+}
+
+.mail-action {
+    background: white;
+    fill: white;
+    border: 1px solid #E6EAEC;
+    padding: 8px;
+    color: #676B6D;
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.mail-action > svg {
+    height: 18px;
+}
+
+.mail-search>input{
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+    min-width: 300px;
+}
+
+.mail-search>button{
+    padding: 7px 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background: var(--green);
+}
+
+.mails-header-title>h2{
+    font-weight: normal;
+    color: #676B6D;
+    font-size: 28px;
+}
