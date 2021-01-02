@@ -1,0 +1,29 @@
+.menu-categories {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.menu-categories-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.categories {
+    list-style: none;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    padding: 5px 0;
+    gap: 10px;
+}
+
+.category-item-icon {
+    height: 16px;
+    color: transparent;
+    fill-opacity: 0.6;
+}
+

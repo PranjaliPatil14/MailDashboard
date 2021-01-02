@@ -1,0 +1,27 @@
+.menu-folders {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.menu-folders-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.folders {
+    list-style: none;
+}
+
+.folder-item {
+    display: flex;
+    border-bottom: 0.5px solid #a7b1c2;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    gap: 10px;
+}
+
+.folder-item-icon {
+    height: 16px;
+}

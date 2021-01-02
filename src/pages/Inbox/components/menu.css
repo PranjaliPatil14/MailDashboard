@@ -1,0 +1,18 @@
+@import "../../../assets/styles/colors.css";
+
+.inbox-menu {
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.compose-mail {
+    background: var(--green);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}

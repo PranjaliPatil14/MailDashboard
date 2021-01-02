@@ -1,0 +1,36 @@
+.menu-labels {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+    color: #666A6C;
+}
+
+.menu-labels-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.labels {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.label-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 2px;
+    background: white;
+}
+
+.label-item-icon {
+    height: 12px;
+    fill: #666A6C;
+}
+

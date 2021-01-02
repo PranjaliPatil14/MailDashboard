@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Labels should render Labels 1`] = `
+<DocumentFragment>
+  <div
+    class="menu-labels"
+  >
+    <p
+      class="menu-labels-title"
+    >
+      Labels
+    </p>
+    <ul
+      class="labels"
+    >
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Family
+      </li>
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Work
+      </li>
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Home
+      </li>
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Children
+      </li>
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Holidays
+      </li>
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Music
+      </li>
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Photography
+      </li>
+      <li
+        class="label-item"
+      >
+        <svg
+          class="label-item-icon"
+          height="14"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+          />
+          <line
+            x1="7"
+            x2="7.01"
+            y1="7"
+            y2="7"
+          />
+        </svg>
+         Film
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
