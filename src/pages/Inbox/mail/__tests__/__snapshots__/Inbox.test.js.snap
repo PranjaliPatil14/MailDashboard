@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mails should render Mails 1`] = `
+exports[`Inbox should render Inbox 1`] = `
 <DocumentFragment>
   <div
     class="inbox-mails"
@@ -217,7 +217,30 @@ exports[`Mails should render Mails 1`] = `
     </div>
     <div
       class="mails-content"
-    />
+    >
+      <div
+        class="mail"
+      >
+        <input
+          type="checkbox"
+        />
+        <strong>
+          name
+        </strong>
+        <span>
+          Tag
+        </span>
+        <p>
+          text
+        </p>
+        <span>
+          icon
+        </span>
+        <span>
+          time
+        </span>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

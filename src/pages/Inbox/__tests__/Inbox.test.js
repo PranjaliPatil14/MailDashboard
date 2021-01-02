@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Inbox from "../Inbox";
+import MailInbox from "../MailInbox";
 
-describe("Inbox", () => {
+describe("MailInbox", () => {
   test("should render inbox", () => {
-    const { asFragment } = render(<Inbox />);
+    const { asFragment } = render(<MailInbox />);
 
     expect(asFragment()).toMatchSnapshot();
   });

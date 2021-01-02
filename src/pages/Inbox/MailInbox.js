@@ -1,19 +1,19 @@
 import React from "react";
 import Header from "../../components/header/Header";
-import "./inbox.css";
+import "./mailInbox.css";
 import Menu from "./menu/Menu";
-import Mails from "./mail/Mails";
+import Inbox from "./mail/Inbox";
 
-const Inbox = () => {
+const MailInbox = () => {
   return (
     <div className="page">
       <Header />
       <div className="page-content">
         <Menu />
-        <Mails />
+        <Inbox />
       </div>
     </div>
   );
 };
 
-export default Inbox;
+export default MailInbox;

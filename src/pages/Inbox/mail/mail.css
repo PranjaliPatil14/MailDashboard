@@ -1,5 +1,14 @@
-.inbox-mails {
-    background: white;
-    flex: 0.8;
-    padding: 20px 16px 0 16px;
+.mail {
+    display: grid;
+    grid-template-columns: 27px 1fr 180px 1.5fr 30px 100px;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 20px 5px 16px;
+    border-top: 0.5px solid #a7b1c2;
+    border-bottom: 0.5px solid #a7b1c2;
+    grid-column-gap: 10px;
+}
+
+.mail>input {
+    height: 35px;
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "./layout/Navigation";
 import "./App.css";
-import Inbox from "./pages/Inbox/Inbox";
+import MailInbox from "./pages/Inbox/MailInbox";
 
 const App = () => {
   return (
     <div className="App">
       <Navigation>
-        <Inbox />
+        <MailInbox />
       </Navigation>
     </div>
   );

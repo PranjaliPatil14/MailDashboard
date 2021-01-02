@@ -56,6 +56,11 @@
   background: #243846;
 }
 
+.navigation--toggle-text {
+  padding: 14px 0;
+  font-size: 20px;
+}
+
 .menu-icon {
   display: flex;
   flex: 0.2;
