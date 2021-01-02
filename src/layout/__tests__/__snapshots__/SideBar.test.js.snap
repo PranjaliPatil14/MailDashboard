@@ -9,11 +9,25 @@ exports[`SideBar should render expanded sidebar 1`] = `
       class="sidebar--toggle"
       type="submit"
     >
-      <h2
-        class="sidebar--toggle-text"
+      <div
+        class="user-profile"
       >
-        IN+
-      </h2>
+        <img
+          alt="profile"
+          class="user-profile--image"
+          src="profile-image.png"
+        />
+        <strong
+          class="user-profile--name"
+        >
+          User Name
+        </strong>
+        <p
+          class="user-profile--role"
+        >
+          role
+        </p>
+      </div>
     </button>
     <ul
       class="sidebar--menu expanded"
