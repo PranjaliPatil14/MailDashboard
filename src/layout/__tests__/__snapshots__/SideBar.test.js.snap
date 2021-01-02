@@ -25,7 +25,10 @@ exports[`SideBar should render expanded sidebar 1`] = `
         <p
           class="user-profile--role"
         >
-          role
+          role 
+          <span>
+            ▼
+          </span>
         </p>
       </div>
     </button>

@@ -1,3 +1,10 @@
+@import "../assets/styles/colors.css";
+
+.sidebar--wrapper {
+  height: 100%;
+  display: flex;
+}
+
 .sidebar {
   width: 80px;
   font-size: 16px;
@@ -70,7 +77,7 @@
 .active-menu {
   background: #293846;
   padding: 10px 0;
-  border-left: 5px solid #05AB8C;
+  border-left: 5px solid var(--green);
   color: white;
 }
 

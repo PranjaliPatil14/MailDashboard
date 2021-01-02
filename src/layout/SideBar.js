@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronDown } from "react-feather";
+import * as PropTypes from "prop-types";
 import ProfileImage from "../assets/images/profile-image.png";
 
 import "./SideBar.css";
 import menuConfig from "./menuConfig";
 
-const SideBar = () => {
+const SideBar = ({ children }) => {
   const [expanded, setExpanded] = useState(false);
 
   const getIcons = () => {
@@ -63,33 +64,40 @@ const SideBar = () => {
   // TODO: toggle sidebar on outside click
 
   return (
-    <nav className={`sidebar ${expanded ? "expanded" : ""}`}>
-      <button
-        className="sidebar--toggle"
-        onClick={() => setExpanded(!expanded)}
-        type="submit"
-      >
-        {expanded ? (
-          <div className="user-profile">
-            <img
-              src={ProfileImage}
-              alt="profile"
-              className="user-profile--image"
-            />
-            <strong className="user-profile--name">User Name</strong>
-            <p className="user-profile--role">
-              role <span>▼</span>
-            </p>
-          </div>
-        ) : (
-          <h2 className="sidebar--toggle-text">IN+</h2>
-        )}
-      </button>
-      <ul className={`sidebar--menu ${expanded ? "expanded" : ""}`}>
-        {expanded ? getMenu() : getIcons()}
-      </ul>
-    </nav>
+    <div className="sidebar--wrapper">
+      <nav className={`sidebar ${expanded ? "expanded" : ""}`}>
+        <button
+          className="sidebar--toggle"
+          onClick={() => setExpanded(!expanded)}
+          type="submit"
+        >
+          {expanded ? (
+            <div className="user-profile">
+              <img
+                src={ProfileImage}
+                alt="profile"
+                className="user-profile--image"
+              />
+              <strong className="user-profile--name">User Name</strong>
+              <p className="user-profile--role">
+                role <span>▼</span>
+              </p>
+            </div>
+          ) : (
+            <h2 className="sidebar--toggle-text">IN+</h2>
+          )}
+        </button>
+        <ul className={`sidebar--menu ${expanded ? "expanded" : ""}`}>
+          {expanded ? getMenu() : getIcons()}
+        </ul>
+      </nav>
+      {children}
+    </div>
   );
+};
+
+SideBar.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default SideBar;

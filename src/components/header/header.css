@@ -1,0 +1,52 @@
+@import "../../assets/styles/colors.css";
+
+.app-header {
+    flex: 1;
+    background: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 20px;
+}
+
+.header-left {
+    display: flex;
+    gap: 20px;
+}
+
+.header-hamburger {
+    background: var(--green);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.header-search {
+    border: none;
+    font-size: 14px;
+    min-width: 700px;
+}
+
+.header-search:focus {
+   outline: none;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    color: #2f4050;
+}
+
+.header-logout {
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-logout > svg{
+    transform: rotate(90deg);
+    margin-right: 5px;
+}
