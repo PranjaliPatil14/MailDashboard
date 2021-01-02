@@ -1,16 +1,23 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import SideBar from "../SideBar";
+import Navigation from "../Navigation";
 
-describe("SideBar", () => {
+describe("Navigation", () => {
+  let component;
+  beforeEach(() => {
+    component = render(
+      <Navigation>
+        <span>Dummy component</span>
+      </Navigation>
+    );
+  });
   test("should render sidebar", () => {
-    const { asFragment } = render(<SideBar />);
-
+    const { asFragment } = component;
     expect(asFragment()).toMatchSnapshot();
   });
 
   test("should render expanded sidebar", () => {
-    const { asFragment, getByRole } = render(<SideBar />);
+    const { asFragment, getByRole } = component;
 
     fireEvent.click(getByRole("button"));
 

@@ -3,17 +3,17 @@ import { ChevronLeft, ChevronDown } from "react-feather";
 import * as PropTypes from "prop-types";
 import ProfileImage from "../assets/images/profile-image.png";
 
-import "./SideBar.css";
+import "./Navigation.css";
 import menuConfig from "./menuConfig";
 
-const SideBar = ({ children }) => {
+const Navigation = ({ children }) => {
   const [expanded, setExpanded] = useState(false);
 
   const getIcons = () => {
     return (
       <>
         {menuConfig.map(({ Component, key }) => (
-          <li key={key} className="sidebar--menu-item">
+          <li key={key} className="navigation--menu-item">
             <Component className="menu-icon" />
           </li>
         ))}
@@ -36,7 +36,7 @@ const SideBar = ({ children }) => {
       <>
         {menuConfig.map(({ Component, key, title, subMenu, active }) => (
           <div className={active ? "active-menu" : ""} key={key}>
-            <li className="sidebar--menu-item expanded">
+            <li className="navigation--menu-item expanded">
               <Component className="menu-icon" />
               <span className="menu-title">{title}</span>
               <span className="menu-toggle">
@@ -61,13 +61,13 @@ const SideBar = ({ children }) => {
     );
   };
 
-  // TODO: toggle sidebar on outside click
+  // TODO: toggle navigation on outside click
 
   return (
-    <div className="sidebar--wrapper">
-      <nav className={`sidebar ${expanded ? "expanded" : ""}`}>
+    <div className="navigation--wrapper">
+      <nav className={`navigation ${expanded ? "expanded" : ""}`}>
         <button
-          className="sidebar--toggle"
+          className="navigation--toggle"
           onClick={() => setExpanded(!expanded)}
           type="submit"
         >
@@ -84,10 +84,10 @@ const SideBar = ({ children }) => {
               </p>
             </div>
           ) : (
-            <h2 className="sidebar--toggle-text">IN+</h2>
+            <h2 className="navigation--toggle-text">IN+</h2>
           )}
         </button>
-        <ul className={`sidebar--menu ${expanded ? "expanded" : ""}`}>
+        <ul className={`navigation--menu ${expanded ? "expanded" : ""}`}>
           {expanded ? getMenu() : getIcons()}
         </ul>
       </nav>
@@ -96,8 +96,8 @@ const SideBar = ({ children }) => {
   );
 };
 
-SideBar.propTypes = {
+Navigation.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default SideBar;
+export default Navigation;

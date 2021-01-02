@@ -1,14 +1,14 @@
 import React from "react";
-import SideBar from "./layout/SideBar";
+import Navigation from "./layout/Navigation";
 import "./App.css";
-import Inbox from "./pages/Inbox";
+import Inbox from "./pages/Inbox/Inbox";
 
 const App = () => {
   return (
     <div className="App">
-      <SideBar>
+      <Navigation>
         <Inbox />
-      </SideBar>
+      </Navigation>
     </div>
   );
 };

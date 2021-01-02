@@ -1,11 +1,11 @@
 @import "../assets/styles/colors.css";
 
-.sidebar--wrapper {
+.navigation--wrapper {
   height: 100%;
   display: flex;
 }
 
-.sidebar {
+.navigation {
   width: 80px;
   font-size: 16px;
   height: 100%;
@@ -16,12 +16,12 @@
   overflow: auto;
 }
 
-.sidebar.expanded {
+.navigation.expanded {
   width: 250px;
   align-items: flex-start;
 }
 
-.sidebar--menu {
+.navigation--menu {
   width: 100%;
   font-weight: bold;
   display: flex;
@@ -31,23 +31,23 @@
   list-style: none;
 }
 
-.sidebar--menu.expanded {
+.navigation--menu.expanded {
   align-items: unset;
 }
 
-.sidebar--menu-item {
+.navigation--menu-item {
   margin: 15px 0;
 }
 
 
-.sidebar--menu-item.expanded{
+.navigation--menu-item.expanded{
   width: 100%;
   display: flex;
   align-items: center;
   margin: 15px 0;
 }
 
-.sidebar--toggle {
+.navigation--toggle {
   width: 100%;
   outline: none;
   box-shadow: none;
