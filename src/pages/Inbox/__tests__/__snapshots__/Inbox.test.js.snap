@@ -842,30 +842,7 @@ exports[`MailInbox should render inbox 1`] = `
         </div>
         <div
           class="mails-content"
-        >
-          <div
-            class="mail"
-          >
-            <input
-              type="checkbox"
-            />
-            <strong>
-              name
-            </strong>
-            <span>
-              Tag
-            </span>
-            <p>
-              text
-            </p>
-            <span>
-              icon
-            </span>
-            <span>
-              time
-            </span>
-          </div>
-        </div>
+        />
       </div>
     </div>
   </div>
