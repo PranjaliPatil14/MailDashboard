@@ -5,9 +5,10 @@ import { UserContext } from "../../../context/userContext";
 import "./mail.css";
 
 const Mail = ({ mail, setSelectedMails }) => {
-  const { tag, id, time, attachment, body, read, important } = mail;
+  const { tag, id, time, attachment, body, read, important, from } = mail;
   const [isSelected, setSelected] = useState(false);
-  const { loggedInUser } = useContext(UserContext);
+  const { users } = useContext(UserContext);
+  const fromUser = users.find((user) => user.id === from);
 
   const onMailSelection = () => {
     setSelected(!isSelected);
@@ -61,7 +62,7 @@ const Mail = ({ mail, setSelectedMails }) => {
       <div className="mail--important">
         {important ? <Star size={16} /> : <></>}
       </div>
-      <p className="mail--from">{loggedInUser.name}</p>
+      <p className="mail--from">{fromUser.name}</p>
       {tag ? (
         <div className="mail--tags">
           <span>{tag}</span>

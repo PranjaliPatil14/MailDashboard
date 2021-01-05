@@ -25,12 +25,10 @@ const Header = () => {
           <Badge text={loggedInUserMails.filter(({ read }) => !read).length} />
         </div>
         <Bell />
-        <button className="header-logout" type="submit">
+        <Button className="header-logout" onClick={() => setLoggedInUser({})}>
           <Download size={16} />
-          <Button onClick={() => setLoggedInUser({})} className="logout-button">
-            Logout
-          </Button>
-        </button>
+          Logout
+        </Button>
       </div>
     </header>
   );

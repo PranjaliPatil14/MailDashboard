@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { ChevronLeft, ChevronDown } from "react-feather";
 import * as PropTypes from "prop-types";
 import ProfileImage from "../assets/images/profile-image.png";
 
 import "./Navigation.css";
 import menuConfig from "./menuConfig";
+import { UserContext } from "../context/userContext";
 
 const Navigation = ({ children }) => {
   const [expanded, setExpanded] = useState(false);
+  const { loggedInUser } = useContext(UserContext);
 
   const getIcons = () => {
     return (
@@ -78,9 +80,11 @@ const Navigation = ({ children }) => {
                 alt="profile"
                 className="user-profile--image"
               />
-              <strong className="user-profile--name">User Name</strong>
+              <strong className="user-profile--name">
+                {loggedInUser.name}
+              </strong>
               <p className="user-profile--role">
-                role <span>▼</span>
+                {loggedInUser.role} <span>▼</span>
               </p>
             </div>
           ) : (

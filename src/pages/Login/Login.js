@@ -4,8 +4,8 @@ import { UserContext } from "../../context/userContext";
 import "./login.css";
 
 const Login = () => {
-  const [username, setUserName] = useState();
-  const [password, setPassword] = useState();
+  const [username, setUserName] = useState("");
+  const [password, setPassword] = useState("");
   const { users, setLoggedInUser } = useContext(UserContext);
   const onSubmit = () => {
     const user = users.find(({ email }) => email === username);
