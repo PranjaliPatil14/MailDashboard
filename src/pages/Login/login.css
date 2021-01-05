@@ -1,0 +1,33 @@
+@import "../../assets/styles/colors.css";
+
+.login {
+    margin: 10% auto 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.username {
+    padding: 20px;
+}
+
+.password {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.login-button {
+    padding: 20px;
+    background: var(--green);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.welcome-text {
+    color: var(--green);
+}

@@ -3,9 +3,12 @@ import { Bell, Download, Mail, Menu } from "react-feather";
 import "./header.css";
 import Badge from "../badge/Badge";
 import { MailContext } from "../../context/mailContext";
+import Button from "../button/Button";
+import { UserContext } from "../../context/userContext";
 
 const Header = () => {
   const { loggedInUserMails } = useContext(MailContext);
+  const { setLoggedInUser } = useContext(UserContext);
   return (
     <header className="app-header">
       <div className="header-left">
@@ -24,7 +27,9 @@ const Header = () => {
         <Bell />
         <button className="header-logout" type="submit">
           <Download size={16} />
-          <span>Logout</span>
+          <Button onClick={() => setLoggedInUser({})} className="logout-button">
+            Logout
+          </Button>
         </button>
       </div>
     </header>

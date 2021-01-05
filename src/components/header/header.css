@@ -69,3 +69,7 @@
     top: -8px;
     right: -8px;
 }
+
+.logout-button {
+    background: transparent;
+}
