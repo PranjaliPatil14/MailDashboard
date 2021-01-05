@@ -42,4 +42,6 @@
 .mail--important>svg{
     fill: gold;
     color: transparent;
+    padding-top: 5px;
 }
+

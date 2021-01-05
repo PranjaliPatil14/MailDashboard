@@ -50,3 +50,8 @@
     transform: rotate(90deg);
     margin-right: 5px;
 }
+
+.header--mail-count {
+    fill: #989C9E;
+    color: white;
+}

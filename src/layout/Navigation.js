@@ -14,7 +14,7 @@ const Navigation = ({ children }) => {
       <>
         {menuConfig.map(({ Component, key }) => (
           <li key={key} className="navigation--menu-item">
-            <Component className="menu-icon" />
+            <Component className="menu-icon" size={20} />
           </li>
         ))}
       </>

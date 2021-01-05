@@ -41,13 +41,12 @@
 }
 
 .mail-action > svg {
-    height: 18px;
+    height: 16px;
 }
 
 .mail-search>input{
-    padding: 5px;
+    padding: 6px;
     font-size: 14px;
-    margin-right: 2px;
     min-width: 300px;
     border: 1px solid #676B6D;
 }

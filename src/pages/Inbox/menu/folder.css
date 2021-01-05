@@ -23,6 +23,11 @@
     gap: 10px;
 }
 
+.folder-item > .badge {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
 .folder-item-icon {
     height: 16px;
 }

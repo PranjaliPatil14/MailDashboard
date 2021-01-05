@@ -19,10 +19,11 @@ import {
 
 const MailHeader = ({ selectedMails }) => {
   const { dispatch } = useContext(MailContext);
+  const { loggedInUserMails } = useContext(MailContext);
   return (
     <div className="mails-header">
       <div className="mails-header-title">
-        <h2>Inbox</h2>
+        <h2>Inbox ({loggedInUserMails.filter(({ read }) => !read).length})</h2>
         <div className="mail-search">
           <input type="search" placeholder="Search email" />
           <Button onClick={() => {}}>Search</Button>
