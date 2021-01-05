@@ -54,7 +54,7 @@ export const mailReducer = (state, action) => {
     case SET_LOGGED_IN_USER_MAIL:
       return {
         ...state,
-        loggedInUserMails: state.mails.filter(
+        loggedInUserMails: state.mails?.filter(
           ({ to, cc }) => to.includes(action.data) || cc.includes(action.data)
         ),
       };

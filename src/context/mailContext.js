@@ -33,7 +33,7 @@ const MailContextProvider = ({ children }) => {
   }, [loggedInUser, value, state.mails]);
 
   useEffect(() => {
-    localStorage.setItem(MAIL, JSON.stringify(state.mails));
+    localStorage.setItem(MAIL, JSON.stringify(state.mails ?? []));
   }, [state.mails]);
 
   return (

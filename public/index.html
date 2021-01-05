@@ -25,8 +25,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
   </head>
   <body>
+  <script>{
+    localStorage.setItem("user", JSON.stringify([{"id": 1,"name": "abc","role": "Art director", "email": "abc@gmail.com", "password": "abc"},{"id": 2,"name": "pqr","role": "ABC Director", "email": "pqr@gmail.com", "password": "pqr"},{"id": 3,"name": "mat","role": "PQA director", "email": "mat@gmail.com", "password": "mat"}]
+    ));
+    localStorage.setItem("mail", JSON.stringify([
+              {"id": 1, "from":1,"to":[3],"cc":[2],"body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget rhoncus metus.","attachment":false,"time":"Sat Jan 02 2021 18:02:02 GMT+0530 (India Standard Time)","tag":"Development", "read": false, "important": false},
+              {"id": 2, "from":2,"to":[1],"cc":[3],"body":"Quisque non lectus tincidunt, consequat sapien eu, rutrum nisl.","attachment":false,"time":"Tue Jan 05 2021 07:44:34 GMT+0530 (India Standard Time)","tag":"Jobs", "read": false, "important": false}
+            ]
+    ));
+  }</script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

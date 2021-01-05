@@ -22,10 +22,10 @@ const UserContextProvider = ({ children }) => {
   const { value } = useLocalStorage(USER);
 
   useEffect(() => {
-    if (!users.length) {
+    if (!users?.length) {
       setUsers(value);
     }
-  }, [users.length, value]);
+  }, [users?.length, value]);
 
   return (
     <UserContext.Provider
