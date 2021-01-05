@@ -16,6 +16,7 @@ const initialMailContextValue = {
 export const MailContext = React.createContext(initialMailContextValue);
 
 export const CHANGE_READ_STATUS = "CHANGE_READ_STATUS";
+export const SEND_MAIL = "SEND_MAIL";
 export const REFRESH_MAILS = "REFRESH_MAILS";
 export const MARK_DELETED = "MARK_DELETED";
 export const CHANGE_IMPORTANCE = "CHANGE_IMPORTANCE";
@@ -70,8 +71,8 @@ const mailReducer = (state, action) => {
     case SET_LOGGED_IN_USER_MAIL:
       return {
         ...state,
-        loggedInUserMails: state.mails.filter(({ to }) =>
-          to.includes(action.data)
+        loggedInUserMails: state.mails.filter(
+          ({ to, cc }) => to.includes(action.data) || cc.includes(action.data)
         ),
       };
     case SET_VALUES:
@@ -84,6 +85,11 @@ const mailReducer = (state, action) => {
       return {
         ...state,
         refresh: true,
+      };
+    case SEND_MAIL:
+      return {
+        ...state,
+        mails: [...state.mails, action.data],
       };
     default:
       return state;

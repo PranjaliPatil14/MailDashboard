@@ -15,6 +15,7 @@ import {
   CHANGE_READ_STATUS,
   MailContext,
   MARK_DELETED,
+  REFRESH_MAILS,
 } from "../../../context/mailContext";
 
 const MailHeader = ({ selectedMails }) => {
@@ -31,7 +32,12 @@ const MailHeader = ({ selectedMails }) => {
       </div>
       <div className="mail-operations">
         <div className="mail-actions">
-          <Button onClick={() => {}} className="mail-action">
+          <Button
+            onClick={() => {
+              dispatch({ type: REFRESH_MAILS, data: selectedMails });
+            }}
+            className="mail-action"
+          >
             <RefreshCw /> Refresh
           </Button>
           <Button

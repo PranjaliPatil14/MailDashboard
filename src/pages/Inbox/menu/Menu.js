@@ -1,14 +1,19 @@
 import React from "react";
+import * as PropTypes from "prop-types";
 import Button from "../../../components/button/Button";
-import "./menu.css";
 import Folders from "./Folders";
 import Categories from "./Categories";
 import Labels from "./Labels";
+import "./menu.css";
 
-const Menu = () => {
+const Menu = ({ setShowCompose }) => {
   return (
     <div className="inbox-menu">
-      <Button type="submit" onClick={() => {}} className="compose-mail">
+      <Button
+        type="submit"
+        onClick={() => setShowCompose(true)}
+        className="compose-mail"
+      >
         Compose Mail
       </Button>
       <Folders />
@@ -16,6 +21,10 @@ const Menu = () => {
       <Labels />
     </div>
   );
+};
+
+Menu.propTypes = {
+  setShowCompose: PropTypes.func.isRequired,
 };
 
 export default Menu;

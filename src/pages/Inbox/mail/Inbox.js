@@ -8,11 +8,15 @@ const Inbox = () => {
   const { loggedInUserMails } = useContext(MailContext);
   const [selectedMails, setSelectedMails] = useState([]);
 
+  const sortedMails = loggedInUserMails.sort(function (a, b) {
+    return new Date(b.time) - new Date(a.time);
+  });
+
   return (
     <div className="inbox-mails">
       <MailHeader selectedMails={selectedMails} />
       <div className="mails-content">
-        {loggedInUserMails.map((mail) => (
+        {sortedMails.map((mail) => (
           <Mail mail={mail} setSelectedMails={setSelectedMails} key={mail.id} />
         ))}
       </div>

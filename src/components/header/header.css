@@ -55,3 +55,17 @@
     fill: #989C9E;
     color: white;
 }
+
+.badge-icon {
+    position: relative;
+}
+
+.badge-icon > svg{
+    position: relative;
+}
+
+.badge-icon > .badge{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}

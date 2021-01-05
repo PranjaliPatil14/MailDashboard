@@ -11,7 +11,11 @@ const Mail = ({ mail, setSelectedMails }) => {
 
   const onMailSelection = () => {
     setSelected(!isSelected);
-    setSelectedMails((prev) => [...prev, id]);
+    if (isSelected) {
+      setSelectedMails((prev) => prev.filter((i) => i !== id));
+    } else {
+      setSelectedMails((prev) => [...prev, id]);
+    }
   };
 
   const formatDateTime = () => {
@@ -51,8 +55,6 @@ const Mail = ({ mail, setSelectedMails }) => {
     return classes;
   };
 
-  const backgroundColor = ["#F9AD50", "#F05262", "#0DC6C9", "#02B493"];
-
   return (
     <div className={getMailClasses()}>
       <input type="checkbox" onClick={onMailSelection} />
@@ -62,14 +64,7 @@ const Mail = ({ mail, setSelectedMails }) => {
       <p className="mail--from">{loggedInUser.name}</p>
       {tag ? (
         <div className="mail--tags">
-          <span
-            style={{
-              backgroundColor:
-                backgroundColor[Math.round(Math.random() * (3 - 0) + 0)],
-            }}
-          >
-            {tag}
-          </span>
+          <span>{tag}</span>
         </div>
       ) : (
         <div />
