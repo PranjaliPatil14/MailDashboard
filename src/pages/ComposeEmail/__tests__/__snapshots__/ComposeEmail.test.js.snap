@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`composeEmail should render compose email form 1`] = `
+<DocumentFragment>
+  <div
+    class="compose-mail-form"
+  >
+    <div
+      class="recipients"
+    >
+      <input
+        data-testid="to"
+        placeholder="TO"
+        value=""
+      />
+      <input
+        data-testid="cc"
+        placeholder="CC"
+        value=""
+      />
+    </div>
+    <div
+      class="compose-mail--body"
+    >
+      <textarea
+        data-testid="body"
+        placeholder="Please write your message here"
+      />
+    </div>
+    <button
+      class="button send-mail"
+      data-testid=""
+      type="submit"
+    >
+      Send
+    </button>
+  </div>
+</DocumentFragment>
+`;

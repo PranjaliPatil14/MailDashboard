@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`login should call setLoggedInUser if password and username is correct 1`] = `
+<DocumentFragment>
+  <div
+    class="login"
+  >
+    <h1
+      class="welcome-text"
+    >
+      Welcome
+    </h1>
+    <input
+      class="username"
+      data-testid="username"
+      placeholder="Enter your email"
+      type="text"
+      value=""
+    />
+    <input
+      class="password"
+      data-testid="password"
+      placeholder="Enter your password"
+      type="password"
+      value=""
+    />
+    <button
+      class="button login-button"
+      data-testid=""
+      type="submit"
+    >
+      Login
+    </button>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MailHeader should render important mail 1`] = `
+<DocumentFragment>
+  <div
+    class="mail read"
+  >
+    <input
+      type="checkbox"
+    />
+    <div
+      class="mail--important"
+    >
+      <svg
+        fill="none"
+        height="16"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+        />
+      </svg>
+    </div>
+    <p
+      class="mail--from"
+    >
+      mat
+    </p>
+    <div />
+    <p
+      class="mail--body"
+    >
+       Integer lacinia, ex vitae interdum lobortis, felis nisi pretium tortor, et tincidunt dolor elit sed magna.
+    </p>
+    <span
+      class="mail--attachment"
+    >
+      <svg
+        fill="none"
+        height="12"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"
+        />
+      </svg>
+    </span>
+    <span
+      class="mail-deliveryTime"
+    >
+      Jan 2
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MailHeader should render mail 1`] = `
+<DocumentFragment>
+  <div
+    class="mail"
+  >
+    <input
+      type="checkbox"
+    />
+    <div
+      class="mail--important"
+    />
+    <p
+      class="mail--from"
+    >
+      abc
+    </p>
+    <div
+      class="mail--tags"
+    >
+      <span>
+        Development
+      </span>
+    </div>
+    <p
+      class="mail--body"
+    >
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget rhoncus metus.
+    </p>
+    <span
+      class="mail--attachment"
+    />
+    <span
+      class="mail-deliveryTime"
+    >
+      Jan 2
+    </span>
+  </div>
+</DocumentFragment>
+`;

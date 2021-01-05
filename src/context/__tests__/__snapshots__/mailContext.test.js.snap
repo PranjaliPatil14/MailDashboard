@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`userContext should pass mails, loggedInUserMails, dispatch props to child component wrapped in mail Context provider 1`] = `
+<DocumentFragment>
+  <span>
+    Quisque non lectus tincidunt, consequat sapien eu, rutrum nisl.
+  </span>
+  <span>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget rhoncus metus.
+  </span>
+  <button
+    class="button "
+    data-testid=""
+    type="submit"
+  >
+    delete
+  </button>
+</DocumentFragment>
+`;

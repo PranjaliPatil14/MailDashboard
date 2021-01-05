@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MailInbox should render inbox 1`] = `
+exports[`MailInbox should render mail inbox 1`] = `
 <DocumentFragment>
   <div
     class="page"
@@ -51,24 +51,33 @@ exports[`MailInbox should render inbox 1`] = `
       <div
         class="header-right"
       >
-        <svg
-          fill="none"
-          height="24"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class="badge-icon"
         >
-          <path
-            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-          />
-          <polyline
-            points="22,6 12,13 2,6"
-          />
-        </svg>
+          <svg
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            />
+            <polyline
+              points="22,6 12,13 2,6"
+            />
+          </svg>
+          <span
+            class="badge"
+          >
+            0
+          </span>
+        </div>
         <svg
           fill="none"
           height="24"
@@ -88,7 +97,8 @@ exports[`MailInbox should render inbox 1`] = `
           />
         </svg>
         <button
-          class="header-logout"
+          class="button header-logout"
+          data-testid=""
           type="submit"
         >
           <svg
@@ -115,9 +125,7 @@ exports[`MailInbox should render inbox 1`] = `
               y2="3"
             />
           </svg>
-          <span>
-            Logout
-          </span>
+          Logout
         </button>
       </div>
     </header>
@@ -129,6 +137,7 @@ exports[`MailInbox should render inbox 1`] = `
       >
         <button
           class="button compose-mail"
+          data-testid=""
           type="submit"
         >
           Compose Mail
@@ -637,7 +646,7 @@ exports[`MailInbox should render inbox 1`] = `
             class="mails-header-title"
           >
             <h2>
-              Inbox
+              Inbox (0)
             </h2>
             <div
               class="mail-search"
@@ -648,6 +657,7 @@ exports[`MailInbox should render inbox 1`] = `
               />
               <button
                 class="button "
+                data-testid=""
                 type="submit"
               >
                 Search
@@ -662,6 +672,7 @@ exports[`MailInbox should render inbox 1`] = `
             >
               <button
                 class="button mail-action"
+                data-testid="REFRESH_MAILS"
                 type="submit"
               >
                 <svg
@@ -689,6 +700,7 @@ exports[`MailInbox should render inbox 1`] = `
               </button>
               <button
                 class="button mail-action"
+                data-testid="CHANGE_READ_STATUS"
                 type="submit"
               >
                 <svg
@@ -714,6 +726,7 @@ exports[`MailInbox should render inbox 1`] = `
               </button>
               <button
                 class="button mail-action"
+                data-testid="CHANGE_IMPORTANCE"
                 type="submit"
               >
                 <svg
@@ -748,6 +761,7 @@ exports[`MailInbox should render inbox 1`] = `
               </button>
               <button
                 class="button mail-action"
+                data-testid="MARK_DELETED"
                 type="submit"
               >
                 <svg
@@ -787,6 +801,7 @@ exports[`MailInbox should render inbox 1`] = `
             >
               <button
                 class="button mail-action"
+                data-testid=""
                 type="submit"
               >
                 <svg
@@ -813,6 +828,7 @@ exports[`MailInbox should render inbox 1`] = `
               </button>
               <button
                 class="button mail-action"
+                data-testid=""
                 type="submit"
               >
                 <svg

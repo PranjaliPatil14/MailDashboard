@@ -7,7 +7,7 @@ const Badge = ({ text }) => {
 };
 
 Badge.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.number.isRequired,
 };
 
 export default Badge;

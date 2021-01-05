@@ -36,6 +36,11 @@ exports[`Folders should render Folders 1`] = `
           />
         </svg>
          Inbox
+        <span
+          class="badge"
+        >
+          3
+        </span>
       </li>
       <li
         class="folder-item"
@@ -83,6 +88,11 @@ exports[`Folders should render Folders 1`] = `
           />
         </svg>
          Important
+        <span
+          class="badge"
+        >
+          4
+        </span>
       </li>
       <li
         class="folder-item"

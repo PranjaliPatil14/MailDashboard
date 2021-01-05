@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Inbox should render Inbox 1`] = `
+exports[`Inbox should render sorted Mails 1`] = `
 <DocumentFragment>
   <div
     class="inbox-mails"
@@ -12,7 +12,7 @@ exports[`Inbox should render Inbox 1`] = `
         class="mails-header-title"
       >
         <h2>
-          Inbox
+          Inbox (2)
         </h2>
         <div
           class="mail-search"
@@ -23,6 +23,7 @@ exports[`Inbox should render Inbox 1`] = `
           />
           <button
             class="button "
+            data-testid=""
             type="submit"
           >
             Search
@@ -37,6 +38,7 @@ exports[`Inbox should render Inbox 1`] = `
         >
           <button
             class="button mail-action"
+            data-testid="REFRESH_MAILS"
             type="submit"
           >
             <svg
@@ -64,6 +66,7 @@ exports[`Inbox should render Inbox 1`] = `
           </button>
           <button
             class="button mail-action"
+            data-testid="CHANGE_READ_STATUS"
             type="submit"
           >
             <svg
@@ -89,6 +92,7 @@ exports[`Inbox should render Inbox 1`] = `
           </button>
           <button
             class="button mail-action"
+            data-testid="CHANGE_IMPORTANCE"
             type="submit"
           >
             <svg
@@ -123,6 +127,7 @@ exports[`Inbox should render Inbox 1`] = `
           </button>
           <button
             class="button mail-action"
+            data-testid="MARK_DELETED"
             type="submit"
           >
             <svg
@@ -162,6 +167,7 @@ exports[`Inbox should render Inbox 1`] = `
         >
           <button
             class="button mail-action"
+            data-testid=""
             type="submit"
           >
             <svg
@@ -188,6 +194,7 @@ exports[`Inbox should render Inbox 1`] = `
           </button>
           <button
             class="button mail-action"
+            data-testid=""
             type="submit"
           >
             <svg
@@ -217,7 +224,78 @@ exports[`Inbox should render Inbox 1`] = `
     </div>
     <div
       class="mails-content"
-    />
+    >
+      <div
+        class="mail"
+      >
+        <input
+          type="checkbox"
+        />
+        <div
+          class="mail--important"
+        />
+        <p
+          class="mail--from"
+        >
+          pqr
+        </p>
+        <div
+          class="mail--tags"
+        >
+          <span>
+            Jobs
+          </span>
+        </div>
+        <p
+          class="mail--body"
+        >
+           Quisque non lectus tincidunt, consequat sapien eu, rutrum nisl.
+        </p>
+        <span
+          class="mail--attachment"
+        />
+        <span
+          class="mail-deliveryTime"
+        >
+          Jan 5
+        </span>
+      </div>
+      <div
+        class="mail"
+      >
+        <input
+          type="checkbox"
+        />
+        <div
+          class="mail--important"
+        />
+        <p
+          class="mail--from"
+        >
+          abc
+        </p>
+        <div
+          class="mail--tags"
+        >
+          <span>
+            Development
+          </span>
+        </div>
+        <p
+          class="mail--body"
+        >
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget rhoncus metus.
+        </p>
+        <span
+          class="mail--attachment"
+        />
+        <span
+          class="mail-deliveryTime"
+        >
+          Jan 2
+        </span>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

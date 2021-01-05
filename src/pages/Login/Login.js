@@ -18,6 +18,7 @@ const Login = () => {
       <h1 className="welcome-text">Welcome</h1>
       <input
         className="username"
+        data-testid="username"
         type="text"
         placeholder="Enter your email"
         value={username}
@@ -28,6 +29,7 @@ const Login = () => {
       <input
         className="password"
         type="password"
+        data-testid="password"
         placeholder="Enter your password"
         value={password}
         onChange={({ target }) => {

@@ -10,13 +10,13 @@ import {
 } from "react-feather";
 import Button from "../../../components/button/Button";
 import "./mailHeader.css";
+import { MailContext } from "../../../context/mailContext";
 import {
   CHANGE_IMPORTANCE,
   CHANGE_READ_STATUS,
-  MailContext,
   MARK_DELETED,
   REFRESH_MAILS,
-} from "../../../context/mailContext";
+} from "../../../context/mailReducer";
 
 const MailHeader = ({ selectedMails }) => {
   const { dispatch } = useContext(MailContext);
@@ -27,7 +27,7 @@ const MailHeader = ({ selectedMails }) => {
         <h2>Inbox ({loggedInUserMails.filter(({ read }) => !read).length})</h2>
         <div className="mail-search">
           <input type="search" placeholder="Search email" />
-          <Button onClick={() => {}}>Search</Button>
+          <Button>Search</Button>
         </div>
       </div>
       <div className="mail-operations">
@@ -37,6 +37,7 @@ const MailHeader = ({ selectedMails }) => {
               dispatch({ type: REFRESH_MAILS, data: selectedMails });
             }}
             className="mail-action"
+            testId={REFRESH_MAILS}
           >
             <RefreshCw /> Refresh
           </Button>
@@ -45,6 +46,7 @@ const MailHeader = ({ selectedMails }) => {
               dispatch({ type: CHANGE_READ_STATUS, data: selectedMails });
             }}
             className="mail-action"
+            testId={CHANGE_READ_STATUS}
           >
             <Eye />
           </Button>
@@ -53,6 +55,7 @@ const MailHeader = ({ selectedMails }) => {
               dispatch({ type: CHANGE_IMPORTANCE, data: selectedMails });
             }}
             className="mail-action"
+            testId={CHANGE_IMPORTANCE}
           >
             <AlertCircle />
           </Button>
@@ -61,15 +64,16 @@ const MailHeader = ({ selectedMails }) => {
               dispatch({ type: MARK_DELETED, data: selectedMails });
             }}
             className="mail-action"
+            testId={MARK_DELETED}
           >
             <Trash2 />
           </Button>
         </div>
         <div className="mail-navigation">
-          <Button onClick={() => {}} className="mail-action">
+          <Button className="mail-action">
             <ArrowLeft />
           </Button>
-          <Button onClick={() => {}} className="mail-action">
+          <Button className="mail-action">
             <ArrowRight />
           </Button>
         </div>

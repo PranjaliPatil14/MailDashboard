@@ -7,6 +7,7 @@ exports[`Menu should render inbox menu 1`] = `
   >
     <button
       class="button compose-mail"
+      data-testid=""
       type="submit"
     >
       Compose Mail

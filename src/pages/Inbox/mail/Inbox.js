@@ -8,7 +8,7 @@ const Inbox = () => {
   const { loggedInUserMails } = useContext(MailContext);
   const [selectedMails, setSelectedMails] = useState([]);
 
-  const sortedMails = loggedInUserMails.sort(function (a, b) {
+  const sortedMails = loggedInUserMails.sort((a, b) => {
     return new Date(b.time) - new Date(a.time);
   });
 

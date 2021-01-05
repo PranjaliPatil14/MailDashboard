@@ -23,12 +23,12 @@ exports[`Navigation should render expanded sidebar 1`] = `
           <strong
             class="user-profile--name"
           >
-            User Name
+            test
           </strong>
           <p
             class="user-profile--role"
           >
-            role 
+            test role 
             <span>
               ▼
             </span>
@@ -688,13 +688,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
@@ -729,13 +729,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
@@ -754,13 +754,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <line
@@ -789,13 +789,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -812,13 +812,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -835,13 +835,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -858,13 +858,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -881,13 +881,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
@@ -918,13 +918,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
@@ -946,13 +946,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
@@ -977,13 +977,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -1009,13 +1009,13 @@ exports[`Navigation should render sidebar 1`] = `
           <svg
             class="menu-icon"
             fill="none"
-            height="24"
+            height="20"
             stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            width="24"
+            width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect

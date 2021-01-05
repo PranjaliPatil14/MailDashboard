@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render button 1`] = `
+<DocumentFragment>
+  <button
+    class="button "
+    data-testid=""
+    type="submit"
+  >
+    Text
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button should render button when classname is passed 1`] = `
+<DocumentFragment>
+  <button
+    class="button test-class"
+    data-testid=""
+    type="submit"
+  >
+    <span>
+      span
+    </span>
+  </button>
+</DocumentFragment>
+`;

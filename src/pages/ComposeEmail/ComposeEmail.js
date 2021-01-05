@@ -3,7 +3,8 @@ import * as PropTypes from "prop-types";
 import Button from "../../components/button/Button";
 import { UserContext } from "../../context/userContext";
 import "./composeEmail.css";
-import { MailContext, SEND_MAIL } from "../../context/mailContext";
+import { MailContext } from "../../context/mailContext";
+import { SEND_MAIL } from "../../context/mailReducer";
 
 const ComposeEmail = ({ setShowCompose }) => {
   const [to, setTo] = useState("");
@@ -38,17 +39,20 @@ const ComposeEmail = ({ setShowCompose }) => {
           onChange={({ target }) => setTo(target.value)}
           value={to}
           placeholder="TO"
+          data-testid="to"
         />
         <input
           onChange={({ target }) => setCC(target.value)}
           value={cc}
           placeholder="CC"
+          data-testid="cc"
         />
       </div>
       <div className="compose-mail--body">
         <textarea
           onChange={({ target }) => setBody(target.value)}
           value={body}
+          data-testid="body"
           placeholder="Please write your message here"
         />
       </div>
