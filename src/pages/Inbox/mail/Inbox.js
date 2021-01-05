@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./inbox.css";
 import MailHeader from "./MailHeader";
 import Mail from "./Mail";
@@ -6,19 +6,14 @@ import { MailContext } from "../../../context/mailContext";
 
 const Inbox = () => {
   const { loggedInUserMails } = useContext(MailContext);
+  const [selectedMails, setSelectedMails] = useState([]);
 
   return (
     <div className="inbox-mails">
-      <MailHeader />
+      <MailHeader selectedMails={selectedMails} />
       <div className="mails-content">
         {loggedInUserMails.map((mail) => (
-          <Mail
-            tag={mail.tag}
-            body={mail.body}
-            time={mail.time}
-            attachment={mail.attachment}
-            key={mail.id}
-          />
+          <Mail mail={mail} setSelectedMails={setSelectedMails} key={mail.id} />
         ))}
       </div>
     </div>

@@ -1,4 +1,5 @@
 .inbox-mails {
     background: white;
     flex: 0.8;
+    overflow: auto;
 }

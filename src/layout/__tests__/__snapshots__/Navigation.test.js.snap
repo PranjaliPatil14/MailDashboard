@@ -47,13 +47,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -91,13 +91,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             >
               <svg
                 fill="none"
-                height="24"
+                height="18"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 viewBox="0 0 24 24"
-                width="24"
+                width="18"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <polyline
@@ -119,13 +119,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle
@@ -159,13 +159,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <line
@@ -209,13 +209,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -235,13 +235,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             >
               <svg
                 fill="none"
-                height="24"
+                height="18"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 viewBox="0 0 24 24"
-                width="24"
+                width="18"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <polyline
@@ -300,13 +300,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -338,13 +338,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -376,13 +376,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -402,13 +402,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             >
               <svg
                 fill="none"
-                height="24"
+                height="18"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 viewBox="0 0 24 24"
-                width="24"
+                width="18"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <polyline
@@ -430,13 +430,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -482,13 +482,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -525,13 +525,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle
@@ -571,13 +571,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -618,13 +618,13 @@ exports[`Navigation should render expanded sidebar 1`] = `
             <svg
               class="menu-icon"
               fill="none"
-              height="24"
+              height="18"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="18"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect

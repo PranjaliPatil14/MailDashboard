@@ -1,11 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import * as PropTypes from "prop-types";
-import { Paperclip } from "react-feather";
+import { Paperclip, Star } from "react-feather";
 import { UserContext } from "../../../context/userContext";
 import "./mail.css";
 
-const Mail = ({ tag, body, time, attachment }) => {
+const Mail = ({ mail, setSelectedMails }) => {
+  const { tag, id, time, attachment, body, read, important } = mail;
+  const [isSelected, setSelected] = useState(false);
   const { loggedInUser } = useContext(UserContext);
+
+  const onMailSelection = () => {
+    setSelected(!isSelected);
+    setSelectedMails((prev) => [...prev, id]);
+  };
 
   const formatDateTime = () => {
     const monthNames = [
@@ -33,9 +40,23 @@ const Mail = ({ tag, body, time, attachment }) => {
     return `${monthNames[date.getMonth()]} ${date.getDate()}`;
   };
 
+  const getMailClasses = () => {
+    let classes = "mail";
+    if (read) {
+      classes += " read";
+    }
+    if (isSelected) {
+      classes += " selected";
+    }
+    return classes;
+  };
+
   return (
-    <div className="mail">
-      <input type="checkbox" />
+    <div className={getMailClasses()}>
+      <input type="checkbox" onClick={onMailSelection} />
+      <div className="mail--important">
+        {important ? <Star size={16} /> : <></>}
+      </div>
       <p className="mail--from">{loggedInUser.name}</p>
       {tag ? (
         <div className="mail--tags">
@@ -54,15 +75,10 @@ const Mail = ({ tag, body, time, attachment }) => {
 };
 
 Mail.propTypes = {
-  tag: PropTypes.string,
-  body: PropTypes.string.isRequired,
-  time: PropTypes.string.isRequired,
-  attachment: PropTypes.bool,
+  mail: PropTypes.instanceOf(Object).isRequired,
+  setSelectedMails: PropTypes.func.isRequired,
 };
 
-Mail.defaultProps = {
-  tag: "",
-  attachment: false,
-};
+Mail.defaultProps = {};
 
 export default Mail;

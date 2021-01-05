@@ -1,13 +1,22 @@
 .mail {
     display: grid;
-    grid-template-columns: 27px 0.25fr 110px 1.5fr 30px 80px;
+    grid-template-columns: 27px 20px 0.25fr 110px 1.5fr 30px 80px;
     justify-content: start;
     align-items: center;
     padding: 10px 20px 10px 16px;
-    border-bottom: 0.5px solid #a7b1c2;
+    border-bottom: 0.5px solid #e8e8e8;
     grid-column-gap: 20px;
     color: #686C6E;
     font-size: 14px;
+    font-weight: bold;
+}
+
+.mail.read {
+    font-weight: normal;
+}
+
+.mail.selected {
+    background: #F9F8F8;
 }
 
 .mail>input {
@@ -28,4 +37,9 @@
 
 .mail-deliveryTime {
     justify-self: end;
+}
+
+.mail--important>svg{
+    fill: gold;
+    color: transparent;
 }

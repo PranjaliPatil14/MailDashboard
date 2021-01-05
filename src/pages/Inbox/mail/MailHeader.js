@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import * as PropTypes from "prop-types";
 import {
   AlertCircle,
   ArrowLeft,
@@ -6,11 +8,17 @@ import {
   RefreshCw,
   Trash2,
 } from "react-feather";
-import React from "react";
 import Button from "../../../components/button/Button";
 import "./mailHeader.css";
+import {
+  CHANGE_IMPORTANCE,
+  CHANGE_READ_STATUS,
+  MailContext,
+  MARK_DELETED,
+} from "../../../context/mailContext";
 
-const MailHeader = () => {
+const MailHeader = ({ selectedMails }) => {
+  const { dispatch } = useContext(MailContext);
   return (
     <div className="mails-header">
       <div className="mails-header-title">
@@ -25,13 +33,28 @@ const MailHeader = () => {
           <Button onClick={() => {}} className="mail-action">
             <RefreshCw /> Refresh
           </Button>
-          <Button onClick={() => {}} className="mail-action">
+          <Button
+            onClick={() => {
+              dispatch({ type: CHANGE_READ_STATUS, data: selectedMails });
+            }}
+            className="mail-action"
+          >
             <Eye />
           </Button>
-          <Button onClick={() => {}} className="mail-action">
+          <Button
+            onClick={() => {
+              dispatch({ type: CHANGE_IMPORTANCE, data: selectedMails });
+            }}
+            className="mail-action"
+          >
             <AlertCircle />
           </Button>
-          <Button onClick={() => {}} className="mail-action">
+          <Button
+            onClick={() => {
+              dispatch({ type: MARK_DELETED, data: selectedMails });
+            }}
+            className="mail-action"
+          >
             <Trash2 />
           </Button>
         </div>
@@ -46,6 +69,10 @@ const MailHeader = () => {
       </div>
     </div>
   );
+};
+
+MailHeader.propTypes = {
+  selectedMails: PropTypes.instanceOf(Array).isRequired,
 };
 
 export default MailHeader;

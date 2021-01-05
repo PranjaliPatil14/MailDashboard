@@ -23,10 +23,10 @@ const Navigation = ({ children }) => {
 
   const getToggleIcon = (active, submenu) => {
     if (active && submenu.length) {
-      return <ChevronDown />;
+      return <ChevronDown size={18} />;
     }
     if (submenu.length) {
-      return <ChevronLeft />;
+      return <ChevronLeft size={18} />;
     }
     return "";
   };
@@ -37,7 +37,7 @@ const Navigation = ({ children }) => {
         {menuConfig.map(({ Component, key, title, subMenu, active }) => (
           <div className={active ? "active-menu" : ""} key={key}>
             <li className="navigation--menu-item expanded">
-              <Component className="menu-icon" />
+              <Component className="menu-icon" size={18} />
               <span className="menu-title">{title}</span>
               <span className="menu-toggle">
                 {getToggleIcon(active, subMenu)}
